@@ -1,0 +1,27 @@
+Alumna: Karla Adriana Esquivel Guzmán.
+
+El ejercicio fue el que se mando el lunes pasado entonces y son los que tienen los archivos como nombre Ejercicio1....
+
+Los archivos que tiene como nombres Ejercicio2... corresponde al ejercicio 2 para correrlos correctamente no se le deben pasar ningun parametro a la hora de ejecutarlos o bien pasarle los parametros completos
+
+
+Para los servidor los parametos deben ser: --port num
+	donde num es un numero de puerto
+Para los clientes los parametros debner ser: --port num --host ht
+	donde num es un numero de puerto y ht el hostname
+
+	Ejemplos:
+
+	gcc Ejercicio2stcp.c -o servertcp
+        ./servertcp --port 80909
+        
+	gcc Ejercicio2ctcp.c -o clientetcp
+	./clientetcp --port 80909 --host 127.0.0.1
+
+El archivo que tiene como nombre Ejercicio3stcp.c es el que responde al ejercicio 3 para esto segun lo que entendi simplemente se dejaba la comunicacion abierta esperando aceptar conexiones esto lo hice con un while infinito
+
+Los archivos Ejercicio4....  corresponde al ejercicio 4, El servidor abre la comunicacion en el puerto 10080 cuadno un cliente se conecta el cliente manda un mensaje y el servidor les ponde un puerto por el cual se comunicaran, tanto el cliente como el servidor realizan comunicacion por dicho puerto hasta que el cliente manda el mensaje close, en este punto el servidor regresa a escuchar por mas clientes al puerto 10080 y el cliente detiene su operacion
+
+Todos los archivos estan comentados explicando que fue lo que hice para poder relizar lo que se pide en la practica.
+
+La practica estuvo muy complicada porque tuve que recordar muchas funciones y cosas en C que no recordaba y todavía no entiendo del todo como hacer sockets pues copie y pegue el código que nos dieron y cambie parametros y funciono correctamente.
